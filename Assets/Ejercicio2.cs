@@ -21,11 +21,11 @@ public class Ejercicio2 : MonoBehaviour
         }
         else if (productos > montoDisponible)
         {
-            Debug.Log("La suma de los tres productos supera al monto disponible. Le faltan $" + (montoDisponible - productos));
+            Debug.Log("La suma de los tres productos supera al monto disponible. Le faltan $" + (productos - montoDisponible));
         }
         else
         {
-            Debug.Log("La suma de los tres productos no supera al monto disponible. Le sobran $" + (productos - montoDisponible));
+            Debug.Log("La suma de los tres productos no supera al monto disponible. Le sobran $" + (montoDisponible - productos));
         }
     }
 
