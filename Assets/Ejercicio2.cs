@@ -7,6 +7,9 @@ Comunicar si la suma de los mismos supera o no el monto de dinero disponible.Lue
 
 public class Ejercicio2 : MonoBehaviour
 {
+    /* Si me piden el %20 del total
+     * total * 0,8 = precio con descuento 
+     20 * total / 100 */
     public float producto1;
     public float producto2;
     public float producto3;
