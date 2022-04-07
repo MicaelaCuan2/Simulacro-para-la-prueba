@@ -15,19 +15,17 @@ public class Ejercicio2 : MonoBehaviour
     void Start()
     {
         float productos = producto1 + producto2 + producto3;
-        float sobra = montoDisponible - productos;
-        float falta = productos - montoDisponible;
         if (productos == montoDisponible)
         {
             Debug.Log("La suma de los tres productos es igual al monto disponible");
         }
         else if (productos > montoDisponible)
         {
-            Debug.Log("La suma de los tres productos supera al monto disponible. Le faltan $" + falta);
+            Debug.Log("La suma de los tres productos supera al monto disponible. Le faltan $" + (montoDisponible - productos));
         }
         else
         {
-            Debug.Log("La suma de los tres productos no supera al monto disponible. Le sobran $" + sobra);
+            Debug.Log("La suma de los tres productos no supera al monto disponible. Le sobran $" + (productos - montoDisponible));
         }
     }
 
